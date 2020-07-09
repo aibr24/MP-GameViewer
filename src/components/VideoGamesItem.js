@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
+import { GameWrapper } from "../styles";
 
-const VideoGamesItem = (props) => {
+const VideoGamesItem = ({ name, genre, image }) => {
+  return (
+    <GameWrapper className="col-lg-4 col-md-6 col-sm-6 mr-auto">
+      <h5>{name}</h5>
+      <p>{genre}</p>
 
-    const game = props.game
-
-    return(
-        <h5>{game.name}</h5>
-        <p>{game.genre}</p>
-        <img src={game.imageUrl}
-
-    );
+      <img src={image} alt={name} />
+    </GameWrapper>
+  );
 };
 
-export default VideoGamesItem
+export default VideoGamesItem;
