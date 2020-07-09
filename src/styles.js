@@ -24,4 +24,11 @@ export const ListWrapper = styled.div`
   display: flex;
 `;
 
+export const Search = styled.input`
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 40%;
+`;
+
 // display: flex;
