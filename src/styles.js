@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-export const ListWrapper = styled.div`
-  align-itemns: center;
-  justify-content: center;
-  display: flex;
-`;
-
 export const GameWrapper = styled.div`
   img {
     width: 75px;
@@ -24,4 +18,10 @@ export const GameWrapper = styled.div`
     color: black;
   }
 `;
+export const ListWrapper = styled.div`
+  align-itemns: center;
+  justify-content: center;
+  display: flex;
+`;
+
 // display: flex;

@@ -1,8 +1,12 @@
 import React from "react";
-import games from "./video-games";
+import { Route, Switch } from "react-router";
 
 //Components
 import VideoGamesList from "./components/VideoGamesList";
+import VideoGameDetail from "./components/VideoGameDetail";
+
+//Data
+import games from "./video-games";
 
 // video games
 // a list of video games
@@ -12,7 +16,14 @@ import VideoGamesList from "./components/VideoGamesList";
 function App() {
   return (
     <div>
-      <VideoGamesList />
+      <Switch>
+        <Route path="/:slug">
+          <VideoGameDetail games={games} />
+        </Route>
+        <Route exact path="/">
+          <VideoGamesList />
+        </Route>
+      </Switch>
     </div>
   );
 }

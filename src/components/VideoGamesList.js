@@ -9,7 +9,12 @@ import VideoGamesItem from "./VideoGamesItem";
 
 const VideoGamesList = () => {
   const videoGamesList = games.map((game) => (
-    <VideoGamesItem name={game.name} genre={game.genre} image={game.imageUrl} />
+    <VideoGamesItem
+      name={game.name}
+      genre={game.genre}
+      image={game.imageUrl}
+      slug={game.slug}
+    />
   ));
 
   return (
