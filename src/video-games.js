@@ -1,5 +1,6 @@
 const games = [
   {
+    id: 1,
     name: "FIFA2020 ",
     genre: "Sports",
     publisher: "EA Games",
@@ -9,6 +10,7 @@ const games = [
     slug: "fifa20",
   },
   {
+    id: 2,
     name: "GTA ViceCity",
     genre: "Action Adventure",
     publisher: "Rockstar Games",
@@ -19,6 +21,7 @@ const games = [
     slug: "gta-vicecity",
   },
   {
+    id: 3,
     name: "Call of Duty: Modern Warfare",
     genre: "First Person Shooter",
     publisher: "Blizzard/Activision",
@@ -30,6 +33,7 @@ const games = [
     slug: "call-of-duty",
   },
   {
+    id: 4,
     name: "Halo",
     genre: "First Person Shooter",
     publisher: "Bungie",
@@ -40,6 +44,7 @@ const games = [
     slug: "halo",
   },
   {
+    id: 5,
     name: "Path Of Exile",
     genre: "Action RPG",
     publisher: "GrindingGearGames",
@@ -50,8 +55,9 @@ const games = [
     slug: "path-of-exile",
   },
   {
+    id: 6,
     name: "Fortnite",
-    genre: "Battle ROyale",
+    genre: "Action Adventure",
     publisher: "Epic Games",
     imageUrl:
       "https://www.mobygames.com/images/covers/l/487051-fortnite-battle-royale-nintendo-switch-front-cover.jpg",
@@ -60,14 +66,26 @@ const games = [
     slug: "fortnite",
   },
   {
+    id: 7,
     name: "World of Warcraft",
-    genre: "MMORPG",
+    genre: "Action Adventure",
     publisher: "Blizzard/Activision",
     imageUrl:
       "https://giantbomb1.cbsistatic.com/uploads/square_medium/8/87790/2849278-box_wowtbc.png",
     description:
       "World of Warcraft (WoW) is a massively multiplayer online role-playing game (MMORPG) released in 2004 by Blizzard Entertainment. It is the fourth released game set in the Warcraft fantasy universe.[3] World of Warcraft takes place within the Warcraft world of Azeroth, approximately four years after the events at the conclusion of Blizzard's previous Warcraft release, Warcraft III: The Frozen Throne.[4] The game was announced in 2001, and was released for the 10th anniversary of the Warcraft franchise on November 23, 2004.",
     slug: "world-of-warcraft",
+  },
+  {
+    id: 8,
+    name: "Madden 2020",
+    genre: "Sports",
+    publisher: "EA Games",
+    imageUrl:
+      "https://images-na.ssl-images-amazon.com/images/I/615ZDSBEREL._AC_SL1000_.jpg",
+    description:
+      "Madden 2020 is a football simulation video game published by Electronic Arts as part of the Madden series",
+    slug: "NFL",
   },
 ];
 
