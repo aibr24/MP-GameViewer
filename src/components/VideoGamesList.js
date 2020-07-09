@@ -19,6 +19,7 @@ const VideoGamesList = () => {
         genre={game.genre}
         image={game.imageUrl}
         slug={game.slug}
+        query={query}
       />
     ));
 

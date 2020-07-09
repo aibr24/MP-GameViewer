@@ -31,4 +31,20 @@ export const Search = styled.input`
   width: 40%;
 `;
 
+export const Copy = styled.button`
+  font-size: 1em;
+   display: inline-block;
+   padding: 0.8em 2em;
+   margin: 0 0.8em 0.8em 0;
+   border-radius: 3em;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-family: "Roboto", sans-serif;
+   font-weight: 900;
+   text-align: right;
+   transition: all 0.2s;
+  background-color: lightblue;
+  color: white;
+`;
+
 // display: flex;
