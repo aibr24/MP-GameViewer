@@ -12,7 +12,7 @@ import games from "./video-games";
 // a list of video games
 // a details page
 // recommended games while in the details page
-
+console.log(window.location.href);
 function App() {
   return (
     <div>

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import { useClipboard } from "use-clipboard-copy";
 
 //Styling
 import { GameWrapper, Copy } from "../styles";
@@ -11,6 +12,21 @@ const VideoGameDetail = ({ games }) => {
 
   const game = games.find((game) => game.slug === slug);
 
+  const [urlCopy, setUrlCopy] = useState();
+  const handleCopy = () => {
+    setUrlCopy(window.location.value);
+    var dummy = `$("<input>").val(urlCopy).appendTo("body").select()`;
+    document.execCommand("copy");
+  };
+  //   const clipboard = useClipboard();
+  // //   return (
+  // //     <div>
+  // //       <input ref={clipboard.target} value={urlCopy} readOnly />
+  // //       <button onClick={clipboard.copy}>Copy Link</button>
+  // //     </div>
+  // //   );
+  // // };
+
   return (
     <>
       <GameWrapper>
@@ -19,7 +35,7 @@ const VideoGameDetail = ({ games }) => {
         <p>Publisher:{game.publisher}</p>
         <p>{game.genre}</p>
         <p>{game.description}</p>
-        <Copy onClick="{handleCopy}">Share</Copy>
+        <Copy onClick={() => handleCopy()}>Share</Copy>
       </GameWrapper>
       <GameRecommnedations games={games} />
     </>

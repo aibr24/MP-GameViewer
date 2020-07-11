@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
 export const GameWrapper = styled.div`
+  margin-top: 5px;
+  border: 1px double;
+
   img {
     width: 75px;
     min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    display: block;
   }
 
   h5 {
@@ -22,6 +29,7 @@ export const ListWrapper = styled.div`
   align-itemns: center;
   justify-content: center;
   display: flex;
+  border: 1px;
 `;
 
 export const Search = styled.input`

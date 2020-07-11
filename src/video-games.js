@@ -87,6 +87,17 @@ const games = [
       "Madden 2020 is a football simulation video game published by Electronic Arts as part of the Madden series",
     slug: "NFL",
   },
+  {
+    id: 9,
+    name: "Valorant",
+    genre: "First Person Shooter",
+    publisher: "Riot Games",
+    imageUrl:
+      "https://img.redbull.com/images/c_fill,g_auto,w_860,h_1075/q_auto,f_auto/redbullcom/2020/3/10/izeqbxwnba72ft9i45qj/valorant",
+    description:
+      "Valorant is a team-based tactical shooter and first-person shooter.",
+    slug: "valorant",
+  },
 ];
 
 export default games;
